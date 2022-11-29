@@ -4,7 +4,7 @@ A simple calculator for working out the tax to pay on the purchase of a resident
 
 Based on the 1st Apri 2021 tax bands.abs
 
-## To Run
+## Instructions
 
 - Clone the repository.
 - Run `npm install` to download dependencies.
