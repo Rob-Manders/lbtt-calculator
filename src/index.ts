@@ -1,26 +1,22 @@
+import { ResidentialRates } from './interfaces/ResidentialRates'
 import { fetchRates } from './modules/fetch-rates'
 import { calculateRate } from './modules/calculate-rate'
 
 export function calculateTax(propertyValue: number): number {
-  const { rates, highestRate, minPropertyValue } = fetchRates()
+  const { rates, highestRate, minPropertyValue }: ResidentialRates = fetchRates()
   const topValue = rates[rates.length - 1][0]
 
   if (propertyValue <= minPropertyValue) return 0
 
-  let tax: number = 0
+  let tax: number = propertyValue > topValue ? (propertyValue - topValue) * highestRate : 0
 
-  rates.forEach((rate, index) => {
-    tax += calculateRate(
-      propertyValue,
-      minPropertyValue,
-      rate,
-      rates[index - 1],
-      index
-    )
-  })
+  let index: number = 0
 
-  if (propertyValue > topValue) {
-    tax = tax + (propertyValue - topValue) * highestRate
+  while (index === 0 || (rates[index] && propertyValue > rates[index - 1][0])) {
+    console.log(`Index: ${index}`)
+    console.log(`Rate: ${rates[index]}`)
+    tax += calculateRate(propertyValue, minPropertyValue, rates[index], rates[index - 1], index)
+    index++
   }
 
   return tax

@@ -1,10 +1,6 @@
-interface Rates {
-  rates: number[][]
-  highestRate: number
-  minPropertyValue: number
-}
+import { ResidentialRates } from '../interfaces/ResidentialRates'
 
-export function fetchRates(): Rates {
+export function fetchRates(): ResidentialRates {
   return {
     rates: [
       [145000, 0],
