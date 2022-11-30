@@ -1,4 +1,4 @@
-import { ResidentialRates } from '../interfaces/ResidentialRates'
+import { ResidentialRates } from '../interfaces/residential-rates'
 
 export function fetchRates(): ResidentialRates {
   return {
