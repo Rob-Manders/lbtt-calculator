@@ -13,8 +13,6 @@ export function calculateTax(propertyValue: number): number {
   let index: number = 0
 
   while (index === 0 || (rates[index] && propertyValue > rates[index - 1][0])) {
-    console.log(`Index: ${index}`)
-    console.log(`Rate: ${rates[index]}`)
     tax += calculateRate(propertyValue, minPropertyValue, rates[index], rates[index - 1], index)
     index++
   }
