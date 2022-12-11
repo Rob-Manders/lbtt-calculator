@@ -6,7 +6,7 @@ Charged on properties with a value of £40,000 or more.
 
 Works like HMRC income tax, where tax is paid between bands.
 
-E.g. a £300,000 property would bay 0% up to £145,000, 2% up to £250,000 then 5% on the remaining £50,000.
+E.g. a £300,000 property would pay 0% up to £145,000, 2% up to £250,000 then 5% on the remaining £50,000.
 
 | Purchase Price    | Rate |
 | ----------------- | ---- |
@@ -18,9 +18,13 @@ E.g. a £300,000 property would bay 0% up to £145,000, 2% up to £250,000 then 
 
 \*0% = nil rate band.
 
+---
+
 ## First Time Buyer's Relief
 
 Increases nil rate band to 175,000.
+
+---
 
 ## Additional Dwelling Supplement
 
@@ -40,6 +44,8 @@ Charged on properties with a value of £40,000 or more.
 - Buyer only owns one propery after effective date (i.e. after purchace).
 - The property has a value less than £40,000.
 - Buy replaces only or main residence 18 months before purchase of new residence.
+
+---
 
 ## Resources
 
